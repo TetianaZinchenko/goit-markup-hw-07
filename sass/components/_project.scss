@@ -18,6 +18,10 @@
   }
 }
 
+.project__link {
+  @extend %link;
+}
+
 .project__title {
   margin-bottom: 4px;
 

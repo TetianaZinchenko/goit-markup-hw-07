@@ -42,7 +42,7 @@
   display: flex;
 }
 
-.address__tel, .address__email, .header-contacts__link, .nav__link, .socials-list__link {
+.address__tel, .address__email, .project__link, .header-contacts__link, .nav__link, .socials-list__link {
   text-decoration: none;
   display: block;
   color: inherit;
