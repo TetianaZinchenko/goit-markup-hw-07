@@ -1,0 +1,139 @@
+.footer {
+  padding: 60px 0;
+
+  background: $additionalBgColor;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address__post {
+  display: inline-block;
+
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: $primaryBgColor;
+}
+
+.address__email {
+  @extend %link;
+
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: $footerLinkColor;
+
+  transition: color $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $primaryBgColor;
+  }
+}
+
+.address__tel {
+  @extend %link;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: $footerLinkColor;
+
+  transition: color $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $primaryBgColor;
+  }
+}
+
+.subscribe {
+  margin-left: 70px;
+}
+
+.subscription {
+  margin-left: 93px;
+}
+
+.footer-join-title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  font-weight: 700;
+  color: $primaryBgColor;
+
+  text-transform: uppercase;
+}
+
+.join-form__box {
+  display: flex;
+  align-items: center;
+}
+
+.join-form__input {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  min-width: 358px;
+  min-height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: $footerLinkColor;
+
+  background-color: transparent;
+
+  @include bordered(1px, $footerJoin);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color $timingFunction;
+
+  outline: transparent;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: $footerLinkColor;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+}
+
+.join-form__button {
+  @extend %button;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  padding: 10px 28px 10px 29px;
+  margin-left: 12px;
+}
+
+.join-form__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

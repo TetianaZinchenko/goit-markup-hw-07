@@ -1,0 +1,42 @@
+.benefits-list {
+  @extend %list;
+
+  flex-wrap: wrap;
+
+  gap: $indent-three;
+}
+
+.benefits-item {
+  flex-basis: calc((100% - $indent-three * ($items-two - 1)) / $items-two);
+
+  &::before {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits-item__box {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+
+  background-color: $bgColor;
+  border-radius: 4px;
+}
+
+.benefits-item__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: $contactsColor;
+}
+
+.benefits-item__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}

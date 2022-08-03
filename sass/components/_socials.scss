@@ -1,0 +1,51 @@
+.socials-list {
+  @extend %list;
+
+  gap: $indent-two;
+}
+
+.socials-list__item {
+  cursor: pointer;
+  flex-basis: calc((100% - $indent-two * ($items-two - 1)) / $items-two);
+}
+
+.socials-list__link {
+  @extend %link;
+
+  height: 44px;
+  width: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  transition: background-color $timingFunction;
+
+  &--gray {
+    background-color: $footerSocial;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.socials-list__icon {
+  transition: color $timingFunction;
+
+  &--grey {
+    fill: $borderClients;
+  }
+
+  &--white {
+    fill: $primaryBgColor;
+  }
+
+  .socials-list__link:hover &,
+  .socials-list__link:focus & {
+    fill: $primaryBgColor;
+  }
+}

@@ -1,0 +1,58 @@
+.team {
+  background: $bgColor;
+}
+
+.team__list {
+  @extend %list;
+
+  gap: $indent-three;
+}
+
+.team__item {
+  flex-basis: calc((100% - $indent-three * ($items-two - 1)) / $items-two);
+  background-color: $primaryBgColor;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__img {
+  @extend %img;
+}
+
+.team__member {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: $contactsColor;
+}
+
+.team__position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team__socials-list {
+  @extend %list;
+
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team__link {
+  @extend %link;
+
+  margin-bottom: 30px;
+
+  color: $borderClients;
+}
